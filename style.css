@@ -6,7 +6,9 @@
     font-family: "PSB";
     src: url(./font/FontsFree-Net-Poppins-Light.ttf);
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: "PSB", sans-serif;
     margin: 0;
