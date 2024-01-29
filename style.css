@@ -1,0 +1,387 @@
+@font-face {
+    font-family: "PSB-M";
+    src: url(./font/PoppinsMedium-1JPv\ \(1\).otf);
+}
+@font-face {
+    font-family: "PSB";
+    src: url(./font/FontsFree-Net-Poppins-Light.ttf);
+}
+
+body {
+    font-family: "PSB", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "PSB-M";
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd900; 
+}
+
+main {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "PSB-M";
+    font-size: 40px;
+}
+ul li {
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+ul li:hover {
+    transform: scale(1.05); 
+}
+
+.cafe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+li:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+h5 {
+    color: #3e3e3e;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+h6 {
+    color: #ababab;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+li a{
+    text-decoration: none;
+}
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+.cafe-image {
+    width: 300px; 
+    height: 200px; 
+}
+.cafe-image-slideshow {
+    width: 500px; 
+    height: 400px; 
+}
+#explore {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px 40px;
+    background-color: #ffffff;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+#explore h2 {
+    margin-top: -10%;
+}
+.cafe-name {
+    font-family: "PSB-M";
+    color: #333;
+}
+#explore-content {
+    flex: 1;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2px;
+}
+.slideshow-container {
+    max-width: 100%;
+    margin: auto;
+    flex: 1;
+}
+.fade {
+    display: none;
+    animation: fade 2s ease-out infinite;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#explore p{
+    font-size: medium;
+}
+#about-content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    vertical-align:middle;
+}
+
+.about-logo {
+    text-align: center;
+}
+
+.about-logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+.about-description {
+    flex: 1;
+    text-align: center;
+}
+
+.about-description h2 {
+    color: #333;
+    text-align: center;
+}
+
+.about-description .logo-title {
+    font-size: 0.7em;
+
+}
+
+.about-description p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+.about-description {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-description h2 {
+    color: #333;
+}
+
+.about-description p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#contact-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#contact-content h2 {
+    color: #fff;
+}
+
+#contact-content p {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffd900; 
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: "PSB";
+    font-weight: bolder;
+}
+.highlight {
+    color:#ffd900;
+    -webkit-text-stroke: 0.007 px black;
+}
+
+button:hover {
+    background-color: #ffd900; 
+}
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 30px; 
+    transition: transform 0.3s ease-in-out;
+    color: #ffd900; 
+    text-decoration: none
+};
+
+.social-links a:hover {
+    transform: scale(1.2); 
+}
+.star-rating {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2px;
+    justify-content: center; 
+}
+.star {
+    color: #ffd900;  
+}
+
+.half-star {
+    color: #ffd900;
+    position: relative;
+    display: inline-block;
+    margin-right: -0.4em;
+}
+footer p {
+    color: #f8f8f8;
+}
+.rating-number {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #555; 
+    font-size: 10px;
+    font-style: italic;
+}
+#scrollToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffd900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 12spx;
+    font-family: "PSB";
+}
+
+#scrollToTopBtn:hover {
+    background-color:#555;  /* Choose a slightly different color for hover effect */
+}
+
+
+
